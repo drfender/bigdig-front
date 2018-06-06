@@ -1,0 +1,115 @@
+@media screen and (max-width: 950px) {
+    .header_menu__logo {
+        padding: 30px 38px;
+    }
+}
+
+
+
+@media screen and (max-width: 796px) {
+    .products_list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        &__item {
+            margin: 5px;
+            width: calc(50% - 10px);
+            & img {
+                object-fit: cover;
+            }
+            &:hover {
+                 div.products_list__item-text {
+                    padding-top: calc(27.6% - .5em);
+                }
+            }
+        }
+    }
+    .about_container_item {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products_list__item:hover div.products_list__item-text {
+        top: inherit;
+        padding: 20px 0;
+        
+    }
+    .products_list__item:nth-child(3):hover .products_list__item-text {
+        padding: 14px 0;
+    }
+    .about_container_item:hover {
+        transform: none;
+    }
+    #burger_menu {
+        display: block;
+        margin: 0;
+    }
+    .header_menu {
+        flex-direction: row-reverse;
+        &_list {
+            display: none;
+        }
+        &__logo {
+            padding: 18px 36px;
+        }
+    }
+}
+@media screen and (max-width: 720px) {
+    .slider_item_textholder {
+        padding-left: 35px;
+        &__text {
+            padding-right: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .about_container {
+        flex-direction: column;
+        &_item {
+            width: calc(100% - 10px);
+            margin: 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 573px) {
+    .footer_wrapper__menu {
+        display: none;
+    }
+    .slider_item_textholder__text {
+        display: none;
+    }
+    .slick-dots li button:before {
+        font-size: 8px;
+    }
+    .slick-dots li.slick-active button:before {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider_item_textholder {
+        top: calc(50% - 3em);
+        padding-top: 16px;
+        &__title {
+            font-size: 25px;
+        }
+        &__subtitle  {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .about_container_item img {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .products_list__item {
+        width: calc(100% - 5px);
+    }
+}
